@@ -6,7 +6,9 @@ class Kadai05Test {
 
 	@Test
 	void testGetMax() {
-		fail("まだ実装されていません");
+		Kadai05 k = new Kadai05();
+		int[] d = {4,10,5,20};
+		assertEquals(20,k.getMax(d));
 	}
 
 }
