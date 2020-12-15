@@ -8,7 +8,24 @@ public class Kadai02 {
 	 * @param c 文字
 	 * @return sの中に入っていたcの文字数
 	 */
+
 	int countString(String s,char c) {
-		return -1;
+
+		try {
+			int count = 0;
+
+			for(char x: s.toCharArray()) {
+				if(x == c)
+					count++;
+			}
+
+			return count;
+
+
+		}catch(NullPointerException e){
+			System.out.println("Nullは入力できません。");
+			return 0;
+		}
 	}
+
 }
